@@ -23,3 +23,13 @@ For a repository named `japanstationeryfinder.github.io` under the `JapanStation
 The site should then be available at:
 
 https://japanstationeryfinder.github.io/
+
+## SEO files
+
+- `robots.txt` - allows search crawlers and points to the sitemap
+- `sitemap.xml` - declares the canonical homepage
+- `favicon.svg` - lightweight site icon
+- `og-image.svg` - social sharing preview image
+- `index.html` - title, description, canonical URL and Open Graph/Twitter metadata
+
+After deployment, submit `https://japanstationeryfinder.github.io/` in Google Search Console.

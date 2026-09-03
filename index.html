@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find Japan-exclusive, store-exclusive and hard-to-find stationery.">
+  <title>Japan Stationery Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">🇯🇵 JAPAN STATIONERY FINDER</div>
+      <h1>Find stationery<br><span>worth bringing home.</span></h1>
+      <p class="intro">A curated finder for Japan-exclusive, store-exclusive and hard-to-find stationery.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="finder">
+      <div class="finder-head">
+        <div>
+          <p class="kicker">FINDER</p>
+          <h2>What are you looking for?</h2>
+        </div>
+        <div id="resultCount" class="result-count"></div>
+      </div>
+
+      <div class="filters" id="filters"></div>
+
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Search product, brand, city..." aria-label="Search products">
+        <button id="clearSearch" type="button" class="clear">Clear</button>
+      </div>
+
+      <div id="productList" class="product-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Japan Stationery Finder</strong>
+        <p>Curated in Japan. Check official stores before travelling.</p>
+      </div>
+      <div class="footer-note">Prices, availability and exclusivity can change.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@ const searchEl = document.getElementById("search");
 const clearEl = document.getElementById("clearSearch");
 
 function yen(value) {
-  if (value === null || value === undefined || value === "") return "Price varies";
+  if (value === null || value === undefined || value === "") return "See store";
   return "¥" + Number(value).toLocaleString("ja-JP");
 }
 
@@ -83,7 +83,7 @@ function card(p) {
         <div class="meta">${tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
       </div>
       <div>
-        <div class="price">${yen(p.priceJpy)}</div>
+        <div class="price-label">Price</div><div class="price">${yen(p.priceJpy)}</div>
         <span class="chevron">⌄</span>
       </div>
     </button>
